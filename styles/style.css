@@ -1,11 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
+}
+
+main {
+    display: flex;
+}
+
+main aside {
+    position: fixed;
+    padding: 32px 16px;
+    background-color: #e4e4e4;
+    height: 100vh;
+    text-align: center;
+}
+
+main aside nav picture img {
+    width: 250px;
+    border-radius: 50%;
+}
+
+main aside nav ul {
+    margin: 64px 0 0 0;
+    padding: 4px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    font-weight: 700;
+}
+
+main aside nav ul li {
+    list-style: none;
+}
+
+main aside nav ul li a {
+    text-decoration: none;
+    color: #252525;
+}
+
+main aside nav p {
+    position: absolute;
+    left: 88px;
+    bottom: 32px;
+    font-size: 25px;
+    color: slategray;    
+}
+
+#list {
+    position: absolute;
+    right: 0;
     padding: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 80vw;
 }
 
 h1 {
@@ -40,7 +97,7 @@ h1 {
     gap: 30px;
 }
 
-li {
+#taskList li {
     list-style: none;
     width: auto;
     height: 40px;
@@ -68,4 +125,19 @@ li {
 
 .canecasvg:hover {
     cursor: pointer;
+}
+
+@media only screen and (max-width:575px) {
+    main aside {
+        display: none;
+    }
+
+    #list {
+        width: 100%;
+        padding: 15px;
+    }
+
+    #taskInput {
+        width: 250px;
+    }
 }

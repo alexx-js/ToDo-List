@@ -1,18 +1,42 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <title>Lista de Tareas</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<body>
-    <h1>Lista de Tareas</h1>
-    <div class="input">
-        <input id="taskInput" type="text" placeholder="Nueva tarea">
-        <button id="addTaskButton">Agregar tarea</button>
-    </div>
-    <br><br>
-    <ul id="taskList">
-    </ul>
+    <link rel="stylesheet" type="text/css" href="styles/style.css" />
+  </head>
+  <body>
+    <main>
+      <aside>
+        <nav>
+            <picture>
+              <img src="img/photo.jpg" alt="" />
+            </picture>
+            <ul>
+              <li>
+                <a href="">Home</a>
+              </li>
+              <li>
+                <a href="">Tasks</a>
+              </li>
+              <li>
+                <a href="">Calendar</a>
+              </li>
+              <li>
+                <a href="">More info</a>
+              </li>
+            </ul>
+            <p>ToDo List</p>
+        </nav>
+      </aside>
+      <section id="list">
+        <div class="input">
+          <input id="taskInput" type="text" placeholder="Nueva tarea" />
+          <button id="addTaskButton">Agregar tarea</button>
+        </div>
+        <br /><br />
+        <ul id="taskList"></ul>
+      </section>
+    </main>
     <script src="index.js"></script>
-</body>
+  </body>
 </html>
